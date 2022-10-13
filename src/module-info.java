@@ -6,4 +6,5 @@
  *
  */
 module DogFight {
+	requires java.desktop;
 }
