@@ -4,17 +4,12 @@ import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
 
-public class DogfightModel implements IDogfightModel,Observer{
-	private ArrayList<IMobile> mobile[];
+public abstract class DogfightModel implements IDogfightModel,Observer{
+	private ArrayList<IMobile> mobile;
 	private Sky sky;
-	public DogfightModel() {
-		this.sky=new Sky();
-	}
-	
-	@Override
-	public void update(Observable o, Object arg) {
-		// TODO Auto-generated method stub
-		
+	public DogfightModel(ArrayList<IMobile> mobil) {
+		this.sky=new Sky(null);
+		this.mobile=new ArrayList<IMobile> ();
 	}
 
 	public Sky getSky() {
@@ -30,7 +25,7 @@ public class DogfightModel implements IDogfightModel,Observer{
 		
 	}
 
-	public ArrayList<IMobile>[] getMobile() {
+	public ArrayList<IMobile> getMobile() {
 		return mobile;
 	}
 	public IMobile getMobileByPlayer(int player) {

@@ -24,13 +24,13 @@ public class Mobile implements IMobile{
 		return dimension;
 	}
 	public int getSpeed() {
-		return speed;
+		return 1;
 	}
 	public int getWidth() {
-		return Width;
+		return 1;
 	}
 	public int getHeight() {
-		return Height;
+		return 1;
 	}
 	public static void move() {
 		
@@ -39,7 +39,7 @@ public class Mobile implements IMobile{
 		
 	}
 	public static boolean isPlayer(int player) {
-		return ;
+		return false;
 	}
 	private void moveUp() {
 		
@@ -54,19 +54,19 @@ public class Mobile implements IMobile{
 		
 	}
 	public static Color getColor() {
-		return ;
+		return null ;
 	}
 	public static void getIDogfightModel(IDogfightModel dogfightModel) {
 		
 	}
 	public static boolean hit() {
-		return ;
+		return false;
 	}
 	public static boolean isWeapon() {
-		return ;
+		return false;
 	}
 	public static Image getImage() {
-		return ;
+		return null;
 	}
 	
 }

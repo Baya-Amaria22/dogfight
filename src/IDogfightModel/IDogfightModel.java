@@ -17,10 +17,11 @@ public interface IDogfightModel {
 		
 	}
 	public static ArrayList<IMobile> getMobiles(){
-		return this.mobile;
+		ArrayList<IMobile> mobile;
+		return null;
 	}
 	public static IMobile getMobileByPlayer(int player) {
-		return ;
+		return null;
 	}
 	public static void setMobilesHavesMoved() {
 		

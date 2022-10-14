@@ -4,30 +4,30 @@ import java.awt.Image;
 import java.awt.Point;
 
 public interface IMobile {
-public static final DogfightModel dogfightModel = new DogfightModel();
+//public static final DogfightModel dogfightModel;
 public static Direction getDirection() {
-	return ;
+	return getDirection();
 }
 public static void setDirection(Direction direction) {
 	
 }
-public Point getPosition() {
-	return ;
+public static Position getPosition() {
+	return getPosition();
 }
-public Dimension getDimension() {
-	return ;
+public static Dimension getDimension() {
+	return getDimension();
 }
-public int getWidth() {
-	return ;
+public static int getWidth() {
+	return 1;
 }
-public int getHeight() {
-	return ;
+public static int getHeight() {
+	return 1;
 }
-public int getSpeed() {
-	return ;
+public static int getSpeed() {
+	return 1;
 }
-public Image getImage() {
-	return ;
+public static Image getImage() {
+	return getImage();
 }
 public static void move() {
 	
@@ -36,15 +36,15 @@ public static void placeInArea(IArea area) {
 	
 }
 public static boolean isPlayer(int player) {
-	return ;
+	return true;
 }
 public static void setDogfightModel(DogfightModel dogfightModel) {
 	
 }
 public static boolean hit() {
-	return ;
+	return true;
 }
 public static boolean isWeapon() {
-	return ;
+	return true;
 }
 }
